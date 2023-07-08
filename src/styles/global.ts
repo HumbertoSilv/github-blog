@@ -6,15 +6,22 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
   }
+
+  html {
+    background-color: ${(props) => props.theme["base-input"]};
+  }
  
   body {
+    width: 100%;
+    max-width: 1340px;
+    margin: 0 auto;
     background-color: ${(props) => props.theme["base-background"]};
     color: ${(props) => props.theme["base-text"]};
     -webkit-font-smoothing: antialiased;
   }
 
   body, input, textarea, button {
-    font: 400 1rem Roboto, sans-serif;
+    font: 400 1rem Nunito Sans, sans-serif;
   }
 
   :focus {
