@@ -2,7 +2,7 @@ import { styled } from "styled-components";
 
 export const PersonProfileContainer = styled.div`
   display: flex;
-  width: 60%;
+  width: 65%;
   margin: 0 auto;
   margin-top: -80px; 
   padding: 30px;
@@ -21,8 +21,12 @@ export const PersonProfileContainer = styled.div`
 export const Content = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: 10px;
-  padding: 5px;
+
+  span {
+    line-height: 1.5;
+  }
 `
 
 export const Header = styled.div`
@@ -32,6 +36,7 @@ export const Header = styled.div`
 
   h1 {
     font-size: 1.5rem;
+    color: ${props => props.theme["base-title"]};
   }
 
   a {
@@ -52,9 +57,14 @@ export const Header = styled.div`
 export const IconsList = styled.div`
   display: flex;
   gap: 20px;
+  padding: 20px 0 0;
 
   img {
     width: 18px;
+  }
+
+  svg {
+    fill: #0562dc;
   }
 
   span {
