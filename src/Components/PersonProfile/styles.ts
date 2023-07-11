@@ -60,6 +60,7 @@ export const IconsList = styled.div`
   padding: 20px 0 0;
 
   img {
+    opacity: 30%;
     width: 18px;
   }
 
@@ -71,5 +72,7 @@ export const IconsList = styled.div`
     display: flex;
     align-items: center;
     gap: 8px;
+
+    color: ${props => props.theme["base-span"]};
   }
 `

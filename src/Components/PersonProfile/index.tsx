@@ -28,7 +28,7 @@ export const PersonProfile = () => {
           <span>
             <img src={Group} alt="" />
             seguidores
-            </span>
+          </span>
         </IconsList>
       </Content>
     </PersonProfileContainer>
